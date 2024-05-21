@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script>
+
+function createArray()
+{
+    var a=[];
+    var sum=0;
+    for(var i=1;i<100;i++)
+    {
+     a[i]=i;
+    sum+=i;
+    }
+    document.getElementById("l1").innerHTML=sum;
+}
+        </script>
+    </head>
+    <body>
+     <button onclick="createArray()">Click me</button> 
+     <div id="l1"></div>  
+    </body>
+</html>
