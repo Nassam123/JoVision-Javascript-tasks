@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+
+function start()
+{
+    var f=fetch("https://api.ipify.org/").then(response=>response.text())
+    .then(data=>{
+        console.log(data);
+        document.getElementById("d").setAttribute("value",data);
+    });
+    
+}
+        </script>
+    </head>
+    <body>
+        <input type="button" onclick="start()" id="d" value ="Get ip"></button>
+    </body>
+</html>
