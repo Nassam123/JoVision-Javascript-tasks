@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <script>
+function dis()
+{
+    fetch("https://api.ipify.org/").then(response =>response.text())
+    .then(data => console.log(data));
+}
+
+        </script>
+    </head>
+    <body>
+<button onclick="dis()">Get ip</button>
+    </body>
+</html>
